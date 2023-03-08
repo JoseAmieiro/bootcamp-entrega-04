@@ -1,10 +1,6 @@
 // Obtener elementos del DOM
 var num1 = document.getElementById("num1");
 var num2 = document.getElementById("num2");
-var sumaButton = document.getElementById("suma");
-var restaButton = document.getElementById("resta");
-var multiplicacionButton = document.getElementById("multiplicacion");
-var divisionButton = document.getElementById("division");
 var resultadoInput = document.getElementById("resultado");
 // Funciones de operaciones
 function sumar() {
@@ -40,9 +36,9 @@ function dividir() {
     }
 }
 // Eventos de botones
-sumaButton.addEventListener("click", sumar);
-restaButton.addEventListener("click", restar);
-multiplicacionButton.addEventListener("click", multiplicar);
-divisionButton.addEventListener("click", dividir);
+sumaButton.getElementById("suma").addEventListener("click", sumar);
+restaButton.getElementById("resta").addEventListener("click", restar);
+multiplicacionButton.getElementById("multiplicacion").addEventListener("click", multiplicar);
+divisionButton.getElementById("division").addEventListener("click", dividir);
 
 
